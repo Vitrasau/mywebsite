@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guu Cuộc sống</title>
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="guucs.css">
+    <link rel="stylesheet" href="../Hoc_Tren_Lop/themify-icons/themify-icons.css">
+</head>
+<body>
+    <!-- begin container -->
+    <div id="container">
+        <!-- begin header -->
+        <div id="header">
+           
+                <div class="heading">
+                    <a href="">GUU.vn</a>
+                </div>
+                <div class="icon-list">
+                    
+                        <ul>
+                            <li class="do">
+                                <a href=""><i class="ti-heart">MY GUU</i></a>
+                            </li>
+                            <li class="do">
+                                <a href=""><i class="ti-star">GUU HOT</i></a>
+                            </li>
+                            <li class="do">
+                                <a href="Dangnhap_guu.html"><i class="ti-user">ĐĂNG NHẬP</i></a>
+                            </li>
+                            <li class="send">
+                                <a  href="Dangnhap_guu.html"><i class="ti-pencil">GỬI BÀI VIÊT</i></a>
+                            </li>
+                        </ul>
+                </div>
+                    <div class="clear"></div>
+            
+        </div>
+        <!-- end header -->
+
+        <!-- begin menu -->
+        <div id="menu">
+            
+            <ul>
+                <li> <a href="guu.html"><i class="ti-home"></i></a><a class="tt" href="guu_thoitrang.html">GUU THỜI TRANG</a></li>
+                <li><a href="guu_lamdep.html">GUU LÀM ĐẸP</a></li>
+                <li><a href="guucs.html">GUU CUỘC SỐNG</a></li>
+                <li><a href="guu_tamsu.html">GUU TÂM SỰ</a></li>
+                <li><a href="guu_ngoisao.html">GUU NGÔI SAO</a></li>
+                <li><a href="guu_anchoi.html">GUU ĂN - CHƠI</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <!-- end menu -->
+	</div>	
+    	<!-- end container -->
+<div class="baiblog">
+    <h1>.GUU CUỘC SỐNG</h1>
+</div>   
+ <!--begin tong1  -->
+<div class="tong1">
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/03/17/b64111314d5eb5877939b18a70e1a62842e89044.jpg" alt="" class="layer1">
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/100000704823525.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Mắt Ngọc</a>
+        </div>
+    
+        <div class="duoi">
+            <a href="">
+                <h2 class="tieude">
+                  Hành trình gian nan để được cấp giấy khai sinh của người "vô hình" 30 năm sống ở Hà Nội: "Tôi như một người ngoài lề xã hội"
+                </h2>
+            </a>
+            <p class="noidung">
+                Vì không có giấy tờ tùy thân, 30 năm qua, anh Dũng phải chấp nhận "nhiều không", không bạn bè, không đi học, không công việc chính thống và cũng không...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/03/16/fd01c1dddb2c27871e584891cac78dfacd11aa12.jpg" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/100007517382936.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Thảo Anh</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+               Nghe tin Hà Nội sắp có Cung thiếu nhi mới, chỉ biết bồi hồi vì bầu trời tuổi thơ ở 36 Lý Thái Tổ mãi xa
+
+            </h2>
+           </a>
+            <p class="noidung">
+                Cung thiếu nhi số 36 Lý Thái Tổ từng là nơi chứa đựng rất nhiều kỉ niệm với các bạn trẻ Hà Nội.</p>
+        </div>
+    </div>
+
+
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/03/13/dd6a9d04bbb25018414163869fc24935280260d3.jpg" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1773360431.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Tuệ Minh</a>
+        </div>
+    
+        <div class="duoi">
+            <a href="">
+                <h2 class="tieude">
+                    Không hổ danh là 'thánh cà khịa', VTV đăng hẳn tâm thư dài liên quan đến YouTuber Thơ Nguyễn
+                </h2>
+            </a>
+            <p class="noidung">
+               Quả không hổ danh là 'vựa muối', VTV đầu tư hẳn một tâm thư dài đằng đẳng chỉ để lên án hành động của YouTuber Thơ Nguyễn khiến cộng đồng mạng không thể...
+            </p>
+        </div>
+    </div>
+    
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/03/13/2a3040ede10f42932cf504cb3e163031a2c19d68.jpg" alt="" class="layer1">
+            
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1631342313859431.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Sky's XXX</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                'Con nhà người ta' Tiên Nguyễn khoe khoảnh khắc bên mẹ, dân tình rần rần vì không biết ai đẹp hơn ai
+            </h2>
+           </a>
+            <p class="noidung">
+                Xuất hiện trên cùng một khung ảnh, Tiên Nguyễn cùng mẹ khiến cư dân mạng xôn xao vì không phân định được... ai đẹp hơn ai!
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/23/f70a4e5ef965bf679b129136414bf39bd4332cb9.jpg" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/2119520188274704.jpg" alt="" class="layer1">
+                <a href="" class="layer2">LoveLife</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Hàng quán phố cổ Hà Nội nghỉ Tết kéo dài, khách sạn rao bán la liệt bằng tờ rơi
+            </h2>
+           </a>
+            <p class="noidung">
+                Hàng loạt khách sạn, nhà hàng, quán cà phê trên phố cổ Hà Nội lại lao đao khi dịch COVID-19 bùng phát, nhiều khách sạn chục tỷ bị rao bán do không thể...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/23/8a9ff592408849fdebfceef768ec00240060a54b.jpg" alt="" class="layer1">
+            
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/23/8a9ff592408849fdebfceef768ec00240060a54b.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Love</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Bốn bà cháu gốc Việt chết khi tìm cách sưởi ấm ở Texas
+            </h2>
+           </a>
+            <p class="noidung">
+                Gia đình người gốc Việt có bốn bà cháu thiệt mạng trong vụ cháy nhà ở Texas, Mỹ, bày tỏ lòng biết ơn đối với sự trợ giúp của cộng đồng trước những mất...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/684348a9222ea9f931acde54363cd5bd6640cba9.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1599392630297411.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Summer</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                6 kiểu người dễ bị béo phì dù có ăn ít cũng vẫn tăng cân đều đều, kiểm tra xem bạn có thuộc nhóm nào không
+            </h2>
+           </a>
+            <p class="noidung">
+                Những người có các đặc điểm sau đây thường dễ bị tăng cân mất kiểm soát hơn, xem ngay để chủ động cải thiện vấn đề của mình bạn nhé!
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/f785e262ad253f8d7d37356b0c5fabb4beae9328.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/100004380702662.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Ngọc Anh</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                2 sai lầm dù tốt bụng đến đâu cũng không nên phạm phải
+            </h2>
+           </a>
+            <p class="noidung">
+                Bạn có thể là một người tốt bụng nhưng cần phải ghi nhớ rằng: Không phải ai cũng xứng đáng với lòng tốt của bạn.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/5f890e68070551997dbf88246d3759f7265ce30c.jpg" alt="" class="layer1">
+             
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/819258378195355.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Autumn</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Hoa hậu Tiểu Vy khoe khéo body 'triệu đô' với váy len trên du thuyền
+            </h2>
+           </a>
+            <p class="noidung">
+                Hoa hậu Tiểu Vy chọn cho mình dáng váy len gân kín đáo, nữ tính để ra phố cuối tuần vừa qua.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/092408c126727ce70e20927d7c813bd01ce18ff8.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/23/8a9ff592408849fdebfceef768ec00240060a54b.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Phương Hằng</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Kiên trì 2 điều vào buổi sáng, tránh xa 3 không vào buổi tối, hệ miễn dịch ngày càng khỏe mạnh, nói không với ung thư
+            </h2>
+           </a>
+            <p class="noidung">
+                Phòng bệnh hơn chữa bệnh, vì thế để không bị ung thư “ghé thăm”, bạn nên duy trì những thói quen tích cực này.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/01f586def9ac0490fd472886027e64a47765947d.png" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/01f586def9ac0490fd472886027e64a47765947d.png" alt="" class="layer1">
+                <a href="" class="layer2">Tuyết Lê</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+             Tài sản khổng lồ nhưng kín tiếng, ai cũng tò mò họ đi xe gì?
+            </h2>
+           </a>
+            <p class="noidung">
+                Không phô trương những bộ sưu tập xe hơi đắt tiền, những người giàu nhất Việt Nam lựa chọn lối sống kín tiếng và thường gắn bó với với các mẫu ôtô thông...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/b06030a10e10e4a614e7689e6977cbe73d272066.jpg" alt="" class="layer1">
+             
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/747916581994895.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Dare</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Lời khai của kẻ cầm đầu đường dây buôn bán trẻ sơ sinh sang Trung Quốc: Mỗi bà mẹ nhận 80 hoặc 100 triệu đồng
+            </h2>
+           </a>
+            <p class="noidung">
+                Với mỗi cháu bé đưa trót lọt qua đường tiểu ngạch ở tỉnh Cao Bằng, mẹ bầu nhận 80 hoặc 100 triệu tuỳ người mua trả, còn lại là của môi giới.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/f55af90230a9584b8f84576f3da92953fc6f482b.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1599392630297411.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Summer</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Xuýt xoa ngắm Jang Mi diện áo tấc truyền thống, đẹp nhẹ nhàng, thanh tân
+                </h2>
+           </a>
+            <p class="noidung">
+                Những hình ảnh của Jang Mi trong MV mới nhất đang nhận được nhiều sự thích thú từ phía khán giả.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/992880c9a3560f85a0c0278088888c1fed035a65.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/542950615854054.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Lily</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Bất cẩn trong quá trình sử dụng, bé gái 11 tuổi bị nhiễm độc thủy ngân
+            </h2>
+           </a>
+            <p class="noidung">
+                Được biết, trong khi gia đình vẩy nhiệt kế để đo thân nhiệt, chiếc nhiệt kế đâm thẳng vào bàn tay trái của cháu bé.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/28/59816e6500666f77942e074c952c38dc694beb77.png" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1283720578315177.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Thắng PD</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Quãng đời còn lại, hãy ở bên một người sẵn sàng chủ động nói chuyện với bạn
+            </h2>
+           </a>
+            <p class="noidung">
+                Trò chuyện với người yêu thương bạn là một quá trình thú vị, từ đó bạn sẽ cảm nhận được bốn loại hạnh phúc: Được quan tâm, được thấu hiểu, được trò chuyện,...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/27/c916a658cafdf7c9dde4cc91ec1ccc7580040089.jpg" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/100004081748035.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Hoài My</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                2 producer tố Sơn Tùng bất ngờ collab, còn ghép luôn 2 bài hát bị nghi đạo nhái vào với nhau định cà khịa hay gì?
+            </h2>
+           </a>
+            <p class="noidung">
+                Drama giữa Sơn Tùng và các producer quốc tế bước lên một tầm cao mới?
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/27/52b12c506e912123c30c4361f880f8f803779124.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/819258378195355.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Autumn</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Ảnh: Nữ sinh sư phạm khóc nức nở, từ TP HCM ra Hà Nội tiễn người yêu lên đường nhập ngũ
+            </h2>
+           </a>
+            <p class="noidung">
+                Trong giây phút tiễn đưa các tân binh lên đường nhập ngũ, nhiều người thân của các chiến sĩ đã không cầm nổi nước mắt xúc động.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/c8dbe3c7c5700b682cf37033933c385d66956304.jpg" alt="" class="layer1">
+              
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1283720578315177.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Thắng PD</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Ngô Thanh Vân đón sinh nhật trên du thuyền với Huy Trần, còn công khai “khẳng định chủ quyền” cực ngọt ngào!
+            </h2>
+           </a>
+            <p class="noidung">
+                Không cần phải úp úp mở mở, Huy Trần công khai cùng bạn gái Ngô Thanh Vân đón tuổi mới.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/9dc8d19d46efbb9f3ecf3e49cdeb4f9b9d8f76a6.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/1773360431.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Tuệ Minh</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Các huyền thoại bóng đá nói gì về Ronaldo 'béo'?
+            </h2>
+           </a>
+            <p class="noidung">
+                Ibrahimovic và Messi khẳng định Ronaldo de Lima là cầu thủ vĩ đại nhất lịch sử bóng đá thế giới.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/4a4e358d4b4f4054e2caa5c5609db6fb65330c2d.jpg" alt="" class="layer1">
+        
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/100004380702662.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Ngọc Anh</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Lệ Quyên tự hào về con trai 10 tuổi đã khí chất như soái ca: Người chụp ảnh là Lâm Bảo Châu?
+            </h2>
+           </a>
+            <p class="noidung">
+                Lệ Quyên tự hào vì con trai và hài lòng vì đã cho quý tử 10 tuổi những điều tuyệt vời nhất.
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/0c5301dc3b1b88a15906cf1e98293f5adf08ee85.jpg" alt="" class="layer1">
+                
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/100004081748035.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Hoài My</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Nghỉ việc ngay sau Tết, bạn có tử tế không?
+            </h2>
+           </a>
+            <p class="noidung">
+                Nhiều người cho rằng nghỉ việc sau Tết là một hành động "ăn cháo đá bát", một số khác lại cho rằng điều đó là bình thường khi mà mối quan hệ giữa bạn và...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/b43b60a01dc7eeb7d2807adcc3f96f8f58a13d3a.jpeg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/747916581994895.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Dare</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Rời khỏi một cuộc tình lâu năm: Tại sao lại ám ảnh bởi chuyện đáng hay không?
+            </h2>
+           </a>
+            <p class="noidung">
+                Có lẽ chúng ta đều nhầm tưởng, thứ tình cảm mang tên “dành trọn thanh xuân” là một khái niệm tồn tại, và luôn thổn thức và hối tiếc vì nó. Nhưng bạn chỉ...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/8710277b2ad294482c060af3cc100c67acea3520.jpg" alt="" class="layer1">
+               
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/893840524065196.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Robin</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Kim Kardashian và Kanye West ly hôn: Kết cục sớm đã được báo trước
+            </h2>
+           </a>
+            <p class="noidung">
+                Cặp đôi quyền lực nhất nhì Hollywood đã đi đến bước không thể quay đầu và đang hoàn thành nốt những thủ tục giấy tờ. Hãy cùng Đẹp nhìn lại những thời điểm...
+            </p>
+        </div>
+    </div>
+    <div class="khoi1">
+        <div class="tren">
+                <img src="https://thumb.guucdn.net/400x225/images.guucdn.net/full/2021/02/26/cbff08f0a5812f38d03560f0a20a9ed617af4f35.jpg" alt="" class="layer1">
+            
+                <span class="layer3"></span>
+        </div>
+    
+        <div class="giua">
+            <img src="https://thumb.guucdn.net/webp/48x48/images.guucdn.net/guu-avatars/503103754.jpg" alt="" class="layer1">
+                <a href="" class="layer2">Tuyết Lê</a>
+        </div>
+    
+        <div class="duoi">
+           <a href="">
+            <h2 class="tieude">
+                Bằng lòng với công việc ổn định, mức lương chỉ đủ dùng có phải đang lãng phí cuộc sống?
+            </h2>
+           </a>
+            <p class="noidung">
+                Bạn nghĩ sao về điều này?
+            </p>
+        </div>
+    </div>
+   
+</div> 
+<!-- end tong1 -->
+<div class="tong2">
+ 
+</div>
+<!-- end tong2 -->
+<div class="next">
+    <ul class="all">
+        <li><a href=""><p>1</p></a></li>
+        <li><a href=""><p>2</p></a></li>
+        <li><a href=""><p>3</p></a></li>
+        <li><a href=""><p>4</p></a></li>
+        <li><a href=""><p>...</p></a></li>
+        <li><a href=""><p>710</p></a></li>
+        <li class="bt"><a href=""><p>Sau <i class="ti-angle-double-right"></i></p></a></li>
+    </ul>
+</div>
+
+
+
+<div class="footer">
+    <div class="trai">
+        <h2>
+            CÔNG TY CỔ PHẦN TRUYỀN THÔNG VÀ ĐẦU TƯ GUU
+        </h2>
+        <ul>
+            <li>
+                <a href="">
+                    <i class="ti-email">
+                        lienhe@guu.vn
+                    </i> 
+            </li>
+            <li>
+            </a>
+            <a href="">
+                <i class="ti-mobile">
+                    02471.098.198
+                </i>
+            </a>
+            </li>
+            <li>
+                <i class="ti-location-pin">
+                    P501, số 1 Phạm Huy Thông, Ba Đình, Hà Nội
+                </i>
+                
+            </li>
+        </ul>
+        
+    </div>
+     <div class="phai">
+        <ul>
+            <li>
+                <h2>
+                    LIÊN HỆ QUẢNG CÁO
+                </h2>
+                
+            </li>
+            <li>
+                <a href="">
+                    lienhe@guu.vn
+                </a>
+                
+            </li>
+            <li>
+                <a href="">
+                    02471.098.198
+                </a>
+               
+            </li>
+            <li>
+                <button>Xem báo giá quảng cáo</button>
+            </li>
+        </ul>
+    </div> 
+</div>
+
+<div class="banquyen">
+    <p class="p1">Copyright 2021 GUU JSC., - Giới thiệu GUU.vn - Điều khoản sử dụng</p>
+    <p class="p2">Giấy phép số 357/GP-BTTTT do Bộ Thông Tin Truyền Thông cấp ngày 04/08/2015. Chịu trách nhiệm nội dung: Vũ Đình Thi</p>
+</div>
+
+
+</body>
+</html>

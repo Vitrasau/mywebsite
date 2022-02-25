@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1170px;
+    height: 192px;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, Sans-serif;
+    
+}
+#container{
+    
+    /* width: 1170px;
+    height: 192px;
+    margin: 0 auto; */
+    
+  display: block;
+    
+}
+#container #header{
+    width: 100% ;
+    height: 78px;
+    /* background-color: orange; */
+    position: relative;
+    border-bottom: 1px solid black;
+    
+}
+
+#header .heading{
+    width: 176px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 48px;
+    
+}
+#header .heading a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+}
+
+#header .icon-list{
+    width: 510px;
+    height: 55px;
+    position: absolute;
+    top: 10px;
+    right: -2px;
+  
+
+}
+ /* seleter các class có tên ti- và đằng sau của nó */
+ .icon-list i[class*="ti-"]{
+     font-weight: bold;
+ }
+.ti-heart::before{
+    padding-right: 3px;
+}
+.ti-star::before{
+    padding-right: 3px;
+}
+.ti-user::before{
+    padding-right: 3px;
+}
+/* .ti-pencil::before{
+    padding-right: 3px;
+} */
+
+#header ul{
+    font-weight: bold;
+}
+#header ul li{
+
+    float: left;
+    list-style-type: none;
+    line-height: 48px;
+    font-size: 14px;
+  
+}
+#header .send{
+    border: 2px solid brown;
+}
+#header .send:hover{
+    opacity: 80%;
+}
+#header .heading:hover{
+    color: red;
+}
+#header a:hover{
+    color: #b71616;
+}
+
+
+
+#header ul li a{
+   
+   padding: 0 14px;
+   text-decoration: none;
+   line-height: 48px;
+   color: black;
+   font-weight: bold;
+   
+}
+
+#menu{
+    width: 100%;
+    height: 62px;
+    border-bottom: 3px solid black;
+}
+#menu li{
+    float: left;
+    padding: 15px;
+    list-style-type: none;
+    /* left: -22px; */
+    /* position: relative; */
+    margin-left: -13px;
+    /* padding: 0 0px; */
+    padding-right: 18px;
+}
+#menu li a{
+    text-decoration: none;
+    margin-left: 8px;
+    color: black;
+    line-height: 38px;
+    font-weight: bold;
+}
+#menu a:hover{
+    color:#b71616;
+}
+#menu i{
+    font-weight: bold;
+}
+.main{
+    width: 100%;
+    position: relative  ;
+    height: 350px;
+}
+
+.main .trai{
+    width: 50%;
+    text-align: center;
+    float: left;
+    
+}
+.main .trai h3{
+    font-size: 24px;
+    color: #333333;
+    margin: 20px 0 10px;
+    
+    line-height: 1.3em;
+    font-weight: 500;
+}
+.main .trai p{
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.main .trai i{
+    padding-right: 10px;
+    text-align: center;
+}
+.main .trai button{
+    width: 136px;
+    height: 39px;
+    background-color: #4258A8;
+    color: #fff;
+    border-radius: 5% ;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.main .trai button:hover{
+    cursor: pointer;
+    /* opacity: 90%; */
+    background-color: #687ac2;
+    border: none;
+}
+.main .trai button:focus{
+     border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.main .trai a{
+    text-decoration: none;
+    color: #b71616;
+}
+
+.main .phai{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-left: 1px solid #ccc;
+    
+}
+.main .phai h3{
+    font-size: 24px;
+    color: #333333;
+    margin: 20px 0 10px;
+    line-height: 1.3em;
+    font-weight: 500;
+    margin-left: 39px;
+
+}
+.main .phai p{
+    margin: 0 0 10px;
+    font-size: 14px;
+    margin-left: 56px;
+    line-height: 1.5em;
+}
+.main .phai .form{
+    width: 388px;
+    height: 238px;
+    margin-left: 74px;
+}
+.main .phai .form label{
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+.main .phai .form input{
+    
+    width: 311px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 1.4;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.main .phai .form .dn{
+    font-size: 13px;
+        background: #4258A8;
+        color: white;
+    width: 116px;
+}
+.main .phai .form .dn:hover{
+    cursor: pointer;
+}
+.main .phai .form input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.main .phai .form p{
+    width: 316px;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: rgb(34, 34, 34);
+    font-style: italic;
+}
+.main .phai .form button{
+    width: 94.51px;
+    height: 34px;
+    border-radius: 4px;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    cursor: pointer;
+    color: white    ;
+}
+.main .phai .form button:hover{
+    cursor: pointer;
+    /* opacity: 90%; */
+    background-color: #286090;
+    border: none;
+}
+.mgl0{
+    margin-left: 0px !important;
+}
+.thoathuan{
+    text-align: center;
+    position: relative;
+    height: 32px;
+    width: 100%;
+}
+.thoathuan input{
+    position: absolute;
+    left: 34.5%;
+    top: 1px;
+}
+.thoathuan p{
+    display: block;
+    font-size: 14px;
+}
+.footer{
+    width: 100%;
+    height: 205px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+.footer .trai{
+
+    width: 435px;
+    height: 128px;
+    text-align: left;
+    margin-left: 245px;
+    margin-top: 48px;
+}
+.footer .trai i{
+    color: white;
+    
+}
+
+.footer .trai li{
+    list-style-type: none;
+    line-height: 1.8;
+}
+.footer .trai h2{
+    font-size: 15px;
+color: white;
+line-height: 1.8;
+}
+.footer .trai a{
+text-decoration: none;
+}
+.footer .trai i p{
+    font-size: 14px;
+    color: white;
+    
+}
+.footer .phai{
+    width: 520px;
+    height: 128px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    
+}
+.footer .phai li{
+    line-height: 1.8;
+}
+.footer .phai a{
+    text-decoration: none;
+    color: white;
+    line-height: 1.8;
+    font-size: 14px;
+}
+.footer .phai h2{
+    color: white;
+    font-size: 15.4px;
+}
+.footer .phai button{
+    height: 34px;
+    width: 173px;
+    margin-top: 2px;
+    border-radius: 5%;
+}
+.footer .phai button:hover{
+    cursor: pointer;
+    opacity: 80%;
+   
+}
+.banquyen{
+    width: 100%;
+    height: 72px;
+    /* border: 1px solid #000; */
+    /* background-color: #ff9b29; */
+    right: 0;
+    bottom: -78px;
+    position: absolute;
+}
+.banquyen p{
+    text-align: center;
+    font-size: 14px;
+    color: #222222;
+    line-height: 1.5em;
+}
+.banquyen .p1{
+margin-bottom: 10px;
+}
+
+
+
+

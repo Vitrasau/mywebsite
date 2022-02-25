@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ Admin</title>
+	<link rel="stylesheet" href="admin.css">
+	<link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+	<link rel="stylesheet" href="../Hoc_Tren_Lop/themify-icons/themify-icons.css">
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<ul>
+				
+				<li><i class="ti-microsoft-alt"></i><a href="">Administrator</a></li>
+				<li><i class="ti-back-right"></i><a href="guu.html">Vào trang web</a></li>
+				<li><a href="">	Liên hệ</a></li>
+				
+			</ul>
+			
+		</div>
+
+		<div id="sidebar">
+			<ul>
+				<li><a class="qluser" href="admin.html"><i class="ti-user"></i> Quản lí user</a></li>
+				<li><a href="qlloaitin.html"><i class="ti-menu"></i> Quản lí loại tin</a></li>
+				<li><a href="qltin.html"><i class="ti-money"></i> Quản lí tin</a></li>
+				<li><a href="qlbl.html"><i class="ti-comment-alt"></i> Quản lí bình luận</a></li>
+				<li><a href="qlqc.html"><i class="ti-announcement"></i> Quản lí quảng cáo</a></li>
+			</ul>
+
+		</div>
+
+		<div id="content">
+			<table>
+				<thead>
+					<tr>
+						<th><input type="checkbox"></th>
+						<th>STT</th>
+						<th>Họ Tên</th>
+						<th>Username</th>
+						<th>Password</th>
+						<th>Ngày Sinh</th>
+						<th>Giới Tính</th>
+						<th>Ngày đăng kí</th>
+						<th>Thao Tác</th>
+						
+					</tr>
+
+				</thead>
+
+				<tbody>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>1</td>
+						<td>Đinh Văn Tùng</td>
+						<td>dinhvantung</td>
+						<td>111111</td>
+						<td>04-04-2000</td>
+						<td>Nam</td>
+						<td>10-10-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>2</td>
+						<td>Nguyễn Văn Tú</td>
+						<td>hoianbam</td>
+						<td>333333</td>
+						<td>04-04-2000</td>
+						<td>Nam</td>
+						<td>10-10-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>	
+					</tr>
+
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>3</td>
+						<td>Phạm Văn Vũ</td>
+						<td>phamvanvu</td>
+						<td>111111</td>
+						<td>07-04-2000</td>
+						<td>Nam</td>
+						<td>10-10-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>4</td>
+						<td>Lò Văn Hoan</td>
+						<td>lovanhoan</td>
+						<td>suotdoiyeuem</td>
+						<td>15-08-1999</td>
+						<td>Nam</td>
+						<td>10-10-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>5</td>
+						<td>Lê Võ Xuân Trường</td>
+						<td>levoxuantruong</td>
+						<td>hehehhe</td>
+						<td>07-12-2001</td>
+						<td>Nam</td>
+						<td>05-11-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>6</td>
+						<td>Nguyễn Hữu Khải</td>
+						<td>abcd</td>
+						<td>111111</td>
+						<td>04-04-2000</td>
+						<td>Nam</td>
+						<td>10-10-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>7</td>
+						<td>Triệu Thị Thu</td>
+						<td>trieuthithu</td>
+						<td>111111</td>
+						<td>08-07-2000</td>
+						<td>Nữ</td>
+						<td>11-12-2020</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>8</td>
+						<td>Đinh Thị Phượng</td>
+						<td>dp1997</td>
+						<td>1dqeffd</td>
+						<td>21-07-1997</td>
+						<td>Nam</td>
+						<td>10-02-2021</td>
+						<td>
+							<a href=""><i class="ti-pencil"></i></a>
+							<a href=""><i class="ti-trash"></i></a>
+						</td>
+						
+						
+					</tr>
+					<tr>
+						
+					</tr>
+				</tbody>
+			</table>
+			<a href="">Xem Thêm...</a> <br> <br>
+			<table  class="cuoi">
+				<th>
+					<a class="aa" href=""><i class="ti-pencil"></i></a>
+					<a href=""><i class="ti-trash"></i></a>	
+					<select name="" id="">
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+					</select>
+					<button>Thêm</button>
+				</th>
+			</table>
+
+		</div>
+
+	</div>
+</body>
+</html>

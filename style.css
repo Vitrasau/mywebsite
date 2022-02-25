@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* .duoi .khoivuongnho{
+    width: 280px;
+    height: 210px;
+    position: relative;
+    display: block;
+    float: left;
+    padding-left: 5px;
+    
+} */
+.duoi .layer1{
+    
+    width: 280px;
+   
+    /* thuộc tính xếp chồng */
+    z-index: 1;
+}
+
+
+a.khoivuongnho:hover .layer2{
+    z-index: 2;
+    width: 280px;
+    height: 210px;
+    top: 0;
+    left: 0;
+    /* background: black; */
+    position: absolute;
+    /* đổ màu */
+   
+    background-image: -webkit-linear-gradient(top, #d8d86957 50%, #00000036 100%);
+    /* tốc dộ di chuyển */
+    transition: 2s;
+}
+.duoi .layer3{
+    z-index: 3;
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0 14px;
+
+}
+
+
